@@ -1,159 +1,218 @@
+:root {
+
+    --dark-blue: #0B1F3A;
+    --orange: #F28C28;
+    --gray: #E5E5E5;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 body {
 
-font-family: Arial, sans-serif;
+    font-family: "Segoe UI", sans-serif;
 
-margin:0;
+    background-color: var(--gray);
 
-background:#f4f6f9;
-
-color:#333;
+    color: var(--dark-blue);
 
 }
-
-
-
-header {
-
-background:#1e293b;
-
-color:white;
-
-text-align:center;
-
-padding:40px;
-
-}
-
-
-
-.subtitle {
-
-color:#cbd5e1;
-
-}
-
-
-
-nav a {
-
-color:white;
-
-margin:15px;
-
-text-decoration:none;
-
-font-weight:bold;
-
-}
-
-
 
 .cover {
 
-height:100vh;
+    position: relative;
 
-display:flex;
+    min-height: 100vh;
 
-flex-direction:column;
+    display: flex;
 
-justify-content:center;
+    justify-content: center;
 
-align-items:center;
+    align-items: center;
 
-text-align:center;
+    text-align: center;
 
-}
+    overflow: hidden;
 
-
-
-.entrance {
-
-display:flex;
-
-gap:30px;
-
-flex-wrap:wrap;
+    background-color: var(--gray);
 
 }
 
+/*
+Replace profile-shadow.png with your image.
+A faded version of your portrait works best.
+*/
 
+.cover::before {
 
-.entrance-card,
-.card {
+    content: "";
 
-background:white;
+    position: absolute;
 
-padding:30px;
+    top: 0;
+    left: 0;
 
-width:300px;
+    width: 100%;
+    height: 100%;
 
-border-radius:12px;
+    background-image:
+        url("images/profile-shadow.png");
 
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    background-position: center;
 
-}
+    background-repeat: no-repeat;
 
+    background-size: contain;
 
+    opacity: 0.08;
 
-.entrance-card a,
-.card a {
-
-display:inline-block;
-
-margin-top:20px;
-
-padding:10px 20px;
-
-background:#1e293b;
-
-color:white;
-
-text-decoration:none;
-
-border-radius:5px;
+    z-index: 1;
 
 }
 
+.background-overlay {
 
+    position: absolute;
 
-.hero {
+    width: 100%;
+    height: 100%;
 
-max-width:900px;
+    background:
+        radial-gradient(
+            circle,
+            transparent,
+            rgba(11,31,58,0.05)
+        );
 
-margin:auto;
-
-padding:50px 20px;
-
-text-align:center;
-
-}
-
-
-
-.cards {
-
-display:flex;
-
-justify-content:center;
-
-gap:25px;
-
-flex-wrap:wrap;
+    z-index: 2;
 
 }
 
+.cover-content {
 
+    position: relative;
+
+    z-index: 3;
+
+    max-width: 900px;
+
+    padding: 40px;
+
+}
+
+h1 {
+
+    font-size: 4rem;
+
+    color: var(--dark-blue);
+
+    margin-bottom: 15px;
+
+}
+
+.subtitle {
+
+    color: var(--orange);
+
+    font-size: 1.4rem;
+
+    margin-bottom: 40px;
+
+}
+
+.welcome-message {
+
+    font-size: 1.2rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 60px;
+
+}
+
+.language-selection {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+}
+
+.language-card {
+
+    width: 320px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    border-left: 6px solid var(--orange);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.1);
+
+}
+
+.language-card h2 {
+
+    color: var(--dark-blue);
+
+    margin-bottom: 20px;
+
+}
+
+.language-card p {
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+
+}
+
+.language-card a {
+
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    background: var(--dark-blue);
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+
+}
+
+.language-card a:hover {
+
+    background: var(--orange);
+
+}
 
 footer {
 
-margin-top:50px;
+    background: var(--dark-blue);
 
-padding:30px;
+    color: white;
 
-text-align:center;
+    text-align: center;
 
-background:#1e293b;
-
-color:white;
+    padding: 20px;
 
 }
