@@ -1,144 +1,129 @@
 * {
-
-margin:0;
-padding:0;
-box-sizing:border-box;
-
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 
 
 body {
+    overflow:hidden;
+}
 
-font-family:
-"Segoe UI",
-Arial,
-sans-serif;
 
-background:#eeeeee;
+.welcome-page {
+
+    height:100vh;
+    width:100%;
+
+    background-image:
+    url("images/cover-photo.png");
+
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+
+.overlay {
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(245,245,245,0.80);
 
 }
 
 
 
-.cover {
+.top-logo {
 
+    position:absolute;
 
-height:100vh;
+    top:70px;
 
-position:relative;
+    text-align:center;
 
-overflow:hidden;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-
-background:
-
-linear-gradient(
-
-120deg,
-
-#f4f4f4,
-
-#d9dde2
-
-);
-
+    z-index:2;
 
 }
 
-
-
-/* Portrait shadow */
-
-
-.portrait {
-
-
-position:absolute;
-
-
-left:0;
-
-bottom:0;
-
-
-width:600px;
-
-height:850px;
-
-
-background-image:
-
-url("images/profile.jpg");
-
-
-background-size:cover;
-
-
-background-position:center;
-
-
-opacity:0.12;
-
-
-filter:
-
-grayscale(100%);
-
-
-}
-
-
-
-
-/* Logo */
 
 
 .logo {
 
+    font-size:85px;
 
-position:absolute;
+    font-weight:900;
 
-
-top:55px;
-
-
-text-align:center;
-
+    color:#12304f;
 
 }
+
 
 
 .logo span {
 
-
-font-size:90px;
-
-font-weight:900;
-
-
-}
-
-
-.blue {
-
-
-color:#0b2d52;
+    color:#f28c00;
 
 }
 
 
 
-.orange {
+.top-logo h2 {
+
+    letter-spacing:6px;
+
+    color:#12304f;
+
+    margin-top:20px;
+
+}
 
 
-color:#f58220;
+
+.language-container {
+
+    z-index:2;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:90%;
+
+    margin-top:80px;
+
+}
+
+
+
+.language-box {
+
+    width:45%;
+
+    text-align:center;
+
+}
+
+
+
+.language-box h1 {
+
+    font-size:55px;
+
+    color:#102f52;
+
+    letter-spacing:2px;
 
 }
 
@@ -146,73 +131,31 @@ color:#f58220;
 
 .line {
 
+    display:flex;
 
-width:45px;
+    align-items:center;
 
-height:3px;
+    justify-content:center;
 
-background:#f58220;
+    gap:25px;
 
-margin:15px auto;
+    margin:25px;
 
+    color:#102f52;
 
-}
-
-
-
-.logo h1 {
-
-
-font-size:26px;
-
-letter-spacing:7px;
-
-color:#102f50;
-
+    font-weight:bold;
 
 }
 
 
 
+.line span {
 
+    width:90px;
 
-/* Languages */
+    height:2px;
 
-
-.language-container {
-
-
-display:flex;
-
-
-align-items:center;
-
-
-justify-content:center;
-
-
-gap:70px;
-
-
-margin-top:100px;
-
-
-z-index:2;
-
-
-}
-
-
-
-
-
-.language-box {
-
-
-width:380px;
-
-text-align:center;
-
+    background:#f28c00;
 
 }
 
@@ -220,45 +163,9 @@ text-align:center;
 
 .language-box h2 {
 
+    color:#102f52;
 
-font-size:55px;
-
-letter-spacing:3px;
-
-
-color:#102f50;
-
-
-}
-
-
-
-.small-line {
-
-
-margin:15px;
-
-color:#102f50;
-
-
-font-size:18px;
-
-
-}
-
-
-
-.language-box h3 {
-
-
-font-size:28px;
-
-
-letter-spacing:3px;
-
-
-color:#102f50;
-
+    letter-spacing:3px;
 
 }
 
@@ -266,231 +173,99 @@ color:#102f50;
 
 .language-box p {
 
+    margin-top:35px;
 
-margin:30px 0;
+    font-size:20px;
 
+    line-height:1.6;
 
-font-size:18px;
-
-
-line-height:1.8;
-
-
-color:#222;
-
+    color:#1b2638;
 
 }
 
 
 
-.language-box a {
+.button {
 
+    display:inline-block;
 
-display:inline-block;
+    margin-top:45px;
 
+    padding:20px 45px;
 
-padding:18px 40px;
+    background:#102f52;
 
+    color:white;
 
-background:#102f50;
+    text-decoration:none;
 
+    border-radius:10px;
 
-color:white;
+    font-size:18px;
 
+    letter-spacing:1px;
 
-text-decoration:none;
+    border-bottom:4px solid #f28c00;
 
-
-font-size:17px;
-
-
-border-radius:8px;
-
-
-border-bottom:5px solid #f58220;
-
-
-transition:0.3s;
-
+    transition:0.3s;
 
 }
 
 
 
-.language-box a:hover {
+.button:hover {
 
+    background:#f28c00;
 
-transform:translateY(-5px);
-
-
-background:#f58220;
-
+    color:white;
 
 }
 
-
-
-
-
-/* Middle divider */
 
 
 .divider {
 
+    height:360px;
 
-height:360px;
+    width:1px;
 
+    background:#777;
 
-width:1px;
-
-
-background:#999;
-
-
-position:relative;
-
+    margin:0 40px;
 
 }
-
-
-
-.divider:after {
-
-
-content:"";
-
-
-position:absolute;
-
-
-top:50%;
-
-
-left:-5px;
-
-
-width:10px;
-
-
-height:10px;
-
-
-background:#f58220;
-
-
-border-radius:50%;
-
-
-}
-
-
-
-
-
-
-/* Bottom design */
-
-
-.bottom-shape {
-
-
-position:absolute;
-
-
-bottom:-80px;
-
-
-left:-50px;
-
-
-width:120%;
-
-
-height:160px;
-
-
-background:#102f50;
-
-
-transform:rotate(-5deg);
-
-
-}
-
-
-
 
 
 
 /* Mobile */
 
-
 @media(max-width:900px){
-
 
 .language-container{
 
-
-flex-direction:column;
-
-
-gap:20px;
-
+    flex-direction:column;
 
 }
-
-
-
-.divider{
-
-
-display:none;
-
-
-}
-
-
-
-.logo h1{
-
-
-font-size:18px;
-
-
-}
-
 
 
 .language-box{
 
-
-width:90%;
-
+    width:90%;
 
 }
 
 
+.divider{
 
-.language-box h2{
-
-
-font-size:40px;
-
+    display:none;
 
 }
 
 
+.language-box h1{
 
-.portrait{
-
-
-width:100%;
-
-
-opacity:0.08;
-
+    font-size:40px;
 
 }
-
 
 }
