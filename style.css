@@ -1777,6 +1777,897 @@ body {
 
 }
 
+/* =========================================================
+   PROFESSIONAL HOME PAGE
+   ========================================================= */
+
+.professional-home {
+
+    --home-navy: #102f52;
+    --home-navy-dark: #0b2340;
+    --home-orange: #f28c00;
+    --home-orange-light: #ffad3d;
+
+    --home-white: #ffffff;
+    --home-light: #f6f8fa;
+    --home-border: #e3e8ed;
+    --home-gray: #687386;
+    --home-dark: #172033;
+
+    margin: 0;
+
+    background: var(--home-white);
+
+    color: var(--home-dark);
+
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.professional-home .home-header {
+
+    min-height: 78px;
+
+    padding: 0 6%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: var(--home-white);
+
+    border-bottom: 1px solid var(--home-border);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+}
+
+
+.professional-home .home-logo {
+
+    color: var(--home-navy);
+
+    text-decoration: none;
+
+    font-size: 32px;
+
+    font-weight: 900;
+
+    letter-spacing: -2px;
+
+}
+
+
+.professional-home .home-logo span {
+
+    color: var(--home-orange);
+
+}
+
+
+.professional-home .home-header nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+}
+
+
+.professional-home .home-header nav a {
+
+    color: var(--home-navy);
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    transition: color 0.25s ease;
+
+}
+
+
+.professional-home .home-header nav a:hover,
+.professional-home .home-header nav a.active {
+
+    color: var(--home-orange);
+
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.professional-home .home-hero {
+
+    background: var(--home-navy-dark);
+
+    color: var(--home-white);
+
+    min-height: 650px;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.professional-home .home-hero-inner {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 90px 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 80px;
+
+}
+
+
+.professional-home .home-hero-content {
+
+    max-width: 760px;
+
+}
+
+
+.professional-home .home-eyebrow {
+
+    color: var(--home-orange);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 28px;
+
+}
+
+
+.professional-home .home-hero h1 {
+
+    margin: 0;
+
+    color: var(--home-white);
+
+    font-size: clamp(58px, 8vw, 100px);
+
+    line-height: 0.95;
+
+    letter-spacing: -4px;
+
+}
+
+
+.professional-home .home-hero h1 span {
+
+    color: var(--home-orange);
+
+}
+
+
+.professional-home .home-accent-line {
+
+    width: 85px;
+
+    height: 3px;
+
+    background: var(--home-orange);
+
+    margin: 35px 0 28px;
+
+}
+
+
+.professional-home .home-tagline {
+
+    color: var(--home-white);
+
+    font-size: 25px;
+
+    line-height: 1.45;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+
+}
+
+
+.professional-home .home-introduction {
+
+    max-width: 610px;
+
+    color: rgba(255,255,255,0.68);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+}
+
+
+.professional-home .home-hero-side {
+
+    min-width: 150px;
+
+    border-left: 1px solid rgba(255,255,255,0.2);
+
+    padding-left: 35px;
+
+}
+
+
+.professional-home .home-side-line {
+
+    width: 35px;
+
+    height: 3px;
+
+    background: var(--home-orange);
+
+    margin-bottom: 20px;
+
+}
+
+
+.professional-home .home-hero-side p {
+
+    color: rgba(255,255,255,0.65);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    line-height: 1.7;
+
+}
+
+
+.professional-home .home-hero-side span {
+
+    display: block;
+
+    margin-top: 35px;
+
+    color: var(--home-orange);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.professional-home .home-actions {
+
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+
+}
+
+
+.professional-home .home-button {
+
+    display: inline-block;
+
+    padding: 14px 22px;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    transition: all 0.25s ease;
+
+}
+
+
+.professional-home .home-button-primary {
+
+    background: var(--home-orange);
+
+    color: var(--home-white);
+
+    border: 2px solid var(--home-orange);
+
+}
+
+
+.professional-home .home-button-primary:hover {
+
+    background: var(--home-orange-light);
+
+    border-color: var(--home-orange-light);
+
+    transform: translateY(-2px);
+
+}
+
+
+.professional-home .home-button-secondary {
+
+    background: transparent;
+
+    color: var(--home-white);
+
+    border: 2px solid rgba(255,255,255,0.35);
+
+}
+
+
+.professional-home .home-button-secondary:hover {
+
+    background: var(--home-white);
+
+    color: var(--home-navy);
+
+}
+
+
+/* =========================================================
+   GENERAL
+   ========================================================= */
+
+.professional-home .home-section-label {
+
+    color: var(--home-orange);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+}
+
+
+.professional-home .home-intro-section {
+
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    padding: 100px 40px;
+
+}
+
+
+.professional-home .home-intro-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    margin-top: 30px;
+
+}
+
+
+.professional-home .home-intro-grid h2 {
+
+    color: var(--home-navy);
+
+    font-size: 45px;
+
+    line-height: 1.1;
+
+    letter-spacing: -1px;
+
+}
+
+
+.professional-home .home-intro-grid h2 span {
+
+    color: var(--home-orange);
+
+}
+
+
+.professional-home .home-intro-grid p {
+
+    color: var(--home-gray);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.professional-home .home-focus-section {
+
+    background: var(--home-light);
+
+    padding: 100px 40px;
+
+}
+
+
+.professional-home .home-section-heading {
+
+    max-width: 1120px;
+
+    margin: 0 auto 45px;
+
+}
+
+
+.professional-home .home-section-heading p {
+
+    color: var(--home-orange);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+}
+
+
+.professional-home .home-section-heading h2 {
+
+    color: var(--home-navy);
+
+    font-size: 42px;
+
+    margin-top: 12px;
+
+}
+
+
+.professional-home .home-section-heading h2 span {
+
+    color: var(--home-orange);
+
+}
+
+
+.professional-home .home-focus-grid {
+
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.professional-home .home-focus-card {
+
+    display: block;
+
+    padding: 35px;
+
+    background: var(--home-white);
+
+    border: 1px solid var(--home-border);
+
+    border-top: 3px solid var(--home-navy);
+
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+
+}
+
+
+.professional-home .home-focus-card:hover {
+
+    transform: translateY(-5px);
+
+    border-top-color: var(--home-orange);
+
+    box-shadow: 0 15px 35px rgba(16,47,82,0.08);
+
+}
+
+
+.professional-home .home-card-number {
+
+    color: var(--home-orange);
+
+    font-size: 12px;
+
+    font-weight: 900;
+
+}
+
+
+.professional-home .home-focus-card h3 {
+
+    color: var(--home-navy);
+
+    font-size: 23px;
+
+    margin: 22px 0 12px;
+
+}
+
+
+.professional-home .home-focus-card p {
+
+    color: var(--home-gray);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    min-height: 72px;
+
+}
+
+
+.professional-home .home-focus-card strong {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: var(--home-orange);
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================================================
+   TECHNOLOGY
+   ========================================================= */
+
+.professional-home .home-technology-section {
+
+    background: var(--home-navy);
+
+    color: var(--home-white);
+
+    padding: 90px 40px;
+
+}
+
+
+.professional-home .home-technology-inner {
+
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+}
+
+
+.professional-home .home-technology-inner h2 {
+
+    color: var(--home-white);
+
+    font-size: 45px;
+
+    line-height: 1.15;
+
+    margin-top: 15px;
+
+}
+
+
+.professional-home .home-technology-inner h2 span {
+
+    color: var(--home-orange);
+
+}
+
+
+.professional-home .home-technology-text p {
+
+    color: rgba(255,255,255,0.7);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+}
+
+
+.professional-home .home-skill-list {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 25px;
+
+}
+
+
+.professional-home .home-skill-list span {
+
+    border: 1px solid rgba(242,140,0,0.5);
+
+    color: var(--home-white);
+
+    padding: 9px 12px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   FINAL
+   ========================================================= */
+
+.professional-home .home-final-section {
+
+    text-align: center;
+
+    padding: 100px 30px;
+
+}
+
+
+.professional-home .home-final-section > p {
+
+    color: var(--home-orange);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+}
+
+
+.professional-home .home-final-section h2 {
+
+    color: var(--home-navy);
+
+    font-size: 44px;
+
+    line-height: 1.15;
+
+    margin: 18px 0 30px;
+
+}
+
+
+.professional-home .home-final-section h2 span {
+
+    color: var(--home-orange);
+
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.professional-home .home-footer {
+
+    background: var(--home-navy-dark);
+
+    text-align: center;
+
+    padding: 45px 20px;
+
+}
+
+
+.professional-home .home-footer-logo {
+
+    color: var(--home-white);
+
+    font-size: 34px;
+
+    font-weight: 900;
+
+}
+
+
+.professional-home .home-footer-logo span {
+
+    color: var(--home-orange);
+
+}
+
+
+.professional-home .home-footer p {
+
+    color: rgba(255,255,255,0.5);
+
+    font-size: 12px;
+
+    margin-top: 8px;
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .professional-home .home-header {
+
+        padding: 18px 25px;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    .professional-home .home-header nav {
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px 16px;
+
+    }
+
+
+    .professional-home .home-hero-inner {
+
+        padding: 75px 25px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .professional-home .home-hero-side {
+
+        display: none;
+
+    }
+
+
+    .professional-home .home-intro-grid,
+    .professional-home .home-technology-inner {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+    }
+
+
+    .professional-home .home-focus-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .professional-home .home-hero h1 {
+
+        font-size: 52px;
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .professional-home .home-tagline {
+
+        font-size: 21px;
+
+    }
+
+
+    .professional-home .home-intro-section,
+    .professional-home .home-focus-section,
+    .professional-home .home-technology-section {
+
+        padding-left: 22px;
+
+        padding-right: 22px;
+
+    }
+
+
+    .professional-home .home-intro-grid h2,
+    .professional-home .home-technology-inner h2,
+    .professional-home .home-section-heading h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .professional-home .home-actions {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .professional-home .home-button {
+
+        text-align: center;
+
+    }
+
+}
+
 
 
 
